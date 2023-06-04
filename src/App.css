@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  /* background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%); */
+  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+main {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  /* Add padding for spacing */
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+  /* Add margin bottom for spacing */
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #30313d;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* Add margin bottom for spacing */
+}
+
+form input[type="datetime-local"] {
+  color: #ddd;
+}
+
+form div.basic {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  /* Add margin bottom for spacing */
+}
+
+form button {
+  width: 100%;
+  margin: 5px;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ddd;
+}
+
+div.transactions {
+  margin-top: 10px;
+}
+
+div.transaction {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  margin-bottom: 10px;
+  /* Add margin bottom for spacing */
+}
+
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+div.description {
+  font-size: 0.6rem;
+  color: lightblue;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: linear-gradient(45deg, transparent 50%, #888 50%),
+    linear-gradient(135deg, #888 50%, transparent 50%);
+  background-position: calc(100% - 20px) center, calc(100% - 15px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  color: #333;
+  margin-bottom: 10px;
+  /* Add margin bottom for spacing */
+}
+
+select:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
+
+div.right {
+  text-align: right;
+  font-weight: bold;
+}
+
+div.price.green {
+  color: #00e338;
+}
+
+div.price.red {
+  color: crimson;
+}
+
+.delete-button {
+  background-color: #ff4f4f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category {
+  color: white;
+  margin-bottom: 10px;
+  /* Add margin bottom for spacing */
+}
+
+.delete-button:hover {
+  background-color: #e63b3b;
+}
+
+div.datetime {
+  font-size: 0.6rem;
+  color: lightblue;
+}
