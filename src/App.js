@@ -16,7 +16,7 @@ function App() {
 
   const getTransactions = async () => {
     try {
-      const { data } = await axios.get('http://localhost:4000/api/transactions');
+      const { data } = await axios.get('https://expense-tracker-ovwx.vercel.app/api/transactions');
       setTransactions(data);
     } catch (error) {
       console.log(error);
@@ -25,7 +25,7 @@ function App() {
 
   const addNewTransaction = async (e) => {
     e.preventDefault();
-    const url = 'http://localhost:4000/api/transaction';
+    const url = 'https://expense-tracker-ovwx.vercel.app/api/transaction';
     const price = parseInt(name);
     try {
       await axios.post(url, { name, price, description, datetime, category });
@@ -41,7 +41,7 @@ function App() {
 
   const deleteTransaction = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/transaction/${id}`);
+      await axios.delete(`https://expense-tracker-ovwx.vercel.app/api/transaction/${id}`);
       getTransactions();
     } catch (error) {
       console.log(error);
@@ -50,7 +50,7 @@ function App() {
 
   const exportTransactions = async (format) => {
     try {
-      const { data } = await axios.get(`http://localhost:4000/api/transactions/export?format=${format}`, {
+      const { data } = await axios.get(`https://expense-tracker-ovwx.vercel.app/api/transactions/export?format=${format}`, {
         responseType: 'blob',
       });
       const downloadUrl = window.URL.createObjectURL(new Blob([data]));
