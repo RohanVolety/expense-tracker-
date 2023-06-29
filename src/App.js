@@ -110,8 +110,6 @@ function App() {
           </div>
           <div className="button-container">
             <button onClick={addNewTransaction}>Add New Transaction</button>
-            // <button onClick={() => exportTransactions('csv')}>Export as CSV</button>
-            // <button onClick={() => exportTransactions('pdf')}>Export as PDF</button>
              <button onClick={getTransactions}>Get Transactions</button>
           </div>
         </form>
